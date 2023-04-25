@@ -1,0 +1,84 @@
+<!-- INICIO BANNER -->
+<div id="inicio ">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+  
+        <div class="container-fluid" >
+            <!-- logo -->
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid d-inline-block align-text-top" src="../../../assets/imagenes/logoAP.png"
+                    alt="Logo" width="110px" />
+            </a>
+  <!-- con ngIf llamo el metodo para permitir que se muestra cuando no esta loggeado  -->
+
+ 
+    <div  class="redes" >
+  
+        <a *ngIf="isLogged" href="#" class="icon icon--github m-2" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            
+        </a>
+    
+        <a href="#"  *ngIf="isLogged" class="icon icon--codepen m-2" target="_blank">
+            <i class="fa-brands fa-codepen"></i>
+        </a>
+
+    </div>
+
+  
+            <!-- boton desplegable responsive -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <!-- items menu -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-2 mb-2 mb-lg-0">
+  
+                    <li class="nav-item active" *ngIf="isLogged" >
+                        <a class="nav-link" routerLink="/Inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item" *ngIf="isLogged">
+                        <a class="nav-link" routerLink="/Sobre-mi">Sobre Mi</a>
+                    </li>
+                    <li class="nav-item" *ngIf="isLogged">
+                        <a class="nav-link" routerLink="/Estudios">Estudios</a>
+                    </li>
+                    <li class="nav-item" *ngIf="isLogged">
+                        <a class="nav-link" routerLink="/Experiencia">Experiencia</a>
+                    </li>
+  
+                    <li class="nav-item" *ngIf="isLogged">
+                        <a class="nav-link" routerLink="/Habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item" *ngIf="isLogged">
+                        <a class="nav-link" routerLink="/Proyectos">Proyectos</a>
+                    </li>
+                
+                </ul>
+               
+              <button *ngIf="!isLogged" 
+                       type="submit" 
+                       class="btn btn-outline-success" 
+                       routerLink="/login" > 
+                <i class="fas fa-sign-in-alt"></i>
+                 INICAR SESIÓN
+                </button> 
+
+                <button  *ngIf="isLogged" 
+                          (click)="onLogOut()"
+                          type="reset" 
+                          style="cursor:pointer" 
+                          class="btn btn-outline-danger">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <i class="fas fa-door-open"></i>
+                    CERRAR SESION
+                </button>
+            
+            </div>
+        </div>
+    </nav>
+    
+  </div>

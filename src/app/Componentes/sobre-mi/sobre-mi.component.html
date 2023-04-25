@@ -1,0 +1,43 @@
+<app-navbar></app-navbar>
+
+<!-- INICIO SOBRE MI -->
+
+<div  id="sobre-mi" class=" offset mt-5 mb-3 container text-center">
+
+    <!-- titulo -->
+    <div class=" encabezado text-center">
+        <h3 class="display-4 fw-bold">Sobre Mi
+           
+
+                <button *ngIf="isAdmin" class="btn btn-outline-warning"
+                     routerLink="/editarPersona/{{persona.id}}">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                     Editar
+                </button>
+        
+        </h3>
+        <hr class="w-50 mx-auto pb-5"> <!--w-50 hace la linea solo a la mitad y mx-auto la centra -->
+    </div>
+
+    <!-- contenido -->
+
+    <!-- foto -->
+    <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12 col-12 text-center">
+
+            <div class="col-md-10 img-fluid">
+                <img src={{persona.foto_perfil}} id="foto-perfil "  
+                    style="max-width: 60%;" alt="foto-Perfil">
+
+            </div>
+
+        </div>
+        <!-- descripcion -->
+        <div class="col-lg-6 col-md-12 col-12">
+
+            <p>{{persona.descripcion}}</p>
+
+        </div>
+
+
+    </div>

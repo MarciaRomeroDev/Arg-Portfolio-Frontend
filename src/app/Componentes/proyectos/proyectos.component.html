@@ -1,0 +1,59 @@
+<app-navbar></app-navbar>
+
+<!--INICIO PROYECTOS-->
+<div id="proyectos" class="offset mt-0 container-fluid ">
+    <!-- titulo -->
+    <div class="encabezado text-center">
+        <h3 class="display-4 fw-bold">Proyectos
+            <button *ngIf="isAdmin" class="btn btn-outline-success" routerLink="/nuevoProyecto">
+                <i class="fa-solid fa-circle-plus"></i>
+                AGREGAR
+            </button>
+        </h3>
+        <hr class="w-50 mx-auto pb-5" />
+    </div>
+
+
+
+     <div class="row justify-content-center text-center"> 
+
+        <div  *ngFor="let proyecto of proyectos"  class="col-lg-4 col-md-6 col-12 pb-5">
+            <div  class="card">
+                <img [src]="proyecto.url_imagen"   class="card-img-top" alt={{proyecto.titulo}}>
+                <div class="card-body">
+
+                    <h5 class="card-title">{{proyecto.titulo}}</h5>
+                    <p class="card-text">{{proyecto.descripcion}}</p>
+                    <!-- botenes de edicion  -->
+                    <div class="d-flex justify-content-between">
+
+                        <div class="align-self-start">
+                            <a href={{proyecto.url_repositorio}}  class="btn ">Repositorio</a>
+                        </div>
+                        
+                        <div class="d-grid gap-2 d-flex align-self-end">
+
+                            <button *ngIf="isAdmin" class="btn btn-outline-warning"
+                                routerLink="/editarProyecto/{{proyecto.id}}">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                               
+                            </button>
+
+                            <button *ngIf="isAdmin" class="btn btn btn-outline-danger" (click)="borrar(proyecto.id)">
+                                <i class="fa-solid fa-trash-can"></i>
+                               
+                            </button>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--FIN PROYECTOS-->

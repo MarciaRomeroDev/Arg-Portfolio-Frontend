@@ -1,0 +1,39 @@
+
+/* Inicio banner*/
+.banner {
+    background-image: url(../.././../assets/imagenes/fondo.png);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    min-height: 100vh;
+   
+}
+
+
+.presentacion h5 {
+    font-size: 3vw;
+    width: 300;
+    color:#b0bb1e;
+    
+}
+
+.presentacion h1 {
+    font-size: 5vw;
+    width: bolder;
+    color: #b0bb1e;
+    
+}
+
+
+.presentacion p {
+    font-size: 2vw;
+    font-weight: lighter;
+    color:#b0bb1e;
+    font-family: monospace, sans-serif;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+/* fin banner*/

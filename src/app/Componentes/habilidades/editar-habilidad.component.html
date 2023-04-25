@@ -1,0 +1,37 @@
+<app-navbar></app-navbar>
+
+<div class="container mt-3" *ngIf="habilidades">
+    <div class="row">
+        <div class="mx-auto col-lg-6 col-md-6 col-12 ">
+             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" >
+                <div class="mb-3 mt-3">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control " id="nombre" placeholder="Ej: Bootstrap" name="nombre" [(ngModel)]="habilidades.nombre" required>
+                </div>
+    
+                <div class="mb-3 mt-3">
+                    <label for="icono">Icono:(<i [class]="habilidades.icono"></i>)</label>
+                    <input type="text" class="form-control " id="icono" placeholder="Ej: fa-brands fa-bootstrap" name="icono" [(ngModel)]="habilidades.icono" required>
+                </div>
+
+                <div class="mb-3 mt-3">
+                    <label for="progreso">Progreso:({{habilidades.progreso}}%)</label>
+                    <input type="range" class="form-range" id="progreso" name="progreso" [(ngModel)]="habilidades.progreso" required>
+                </div>
+    
+                <div class= "d-grid gap-2 d-md-flex">
+                    <button class="btn btn-outline-success" 
+                            [disabled]="!f.valid">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            Actualizar
+                    </button>
+                    <button class="btn btn-outline-primary" 
+                            routerLink = "/Habilidades"> 
+                            <i class="fa-solid fa-rotate-left"></i>
+                            Volver
+                    </button>
+                  </div>
+            </form>
+        </div>
+    </div>
+</div>

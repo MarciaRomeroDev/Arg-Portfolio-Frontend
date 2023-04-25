@@ -1,0 +1,89 @@
+<app-navbar></app-navbar>
+
+<!-- INICIO HABILIDADES -->
+<div id="habilidades" class="offset mt-0 container-fluid">
+    <!-- titulo -->
+    <div class="encabezado text-center">
+        <h3 class="display-4 fw-bold">Habilidades
+            <button *ngIf="isAdmin" class="btn btn-outline-success" routerLink="/nuevaHabilidad">
+                <i class="fa-solid fa-circle-plus"></i>
+                AGREGAR
+            </button>
+        </h3>
+        <hr class="w-50 mx-auto pb-5" />
+        <!--w-50 hace la linea solo a la mitad y mx-auto la centra -->
+    </div>
+
+    <div class="row" >
+        <div  class="col-lg-6 col-md-6 col-12 text-center mt-3 ">
+           <img src="../../../assets/imagenes/skill.jpg" alt="imagen" class="col-md-10 img-fluid">
+        </div>
+      
+        <div class="col-lg-6 col-md-6 col-12 text-center mt-3 ">
+        
+            <div  class="col-10 "  *ngFor="let habilidad of habilidades">
+                <div class="d-flex justify-content-between"> 
+                    <div class="align-self-start">
+                        <p class=" text-start">
+                            <i [class]="habilidad.icono"></i>
+                            {{habilidad.nombre}}
+                        </p>
+ 
+                    </div>
+
+                    <div class="d-grid gap-2 d-flex align-self-end mb-3">
+
+                        <button class="btn btn-outline-warning" routerLink="/editarHabilidad/{{habilidad.id}}">
+                            <i class="fa-solid fa-pen-to-square"></i>
+
+                        </button>
+
+                        <button class="btn btn btn-outline-danger" (click)="borrar(habilidad.id)">
+                            <i class="fa-solid fa-trash-can"></i>
+
+                        </button>
+
+
+                        </div>
+                </div>
+
+                <!-- <div class="row">
+                    <div class=" col-lg-6 col-md-6 col-12 text-center">
+                        <p class=" text-start">
+                            <i [class]="habilidad.icono"></i>
+                            {{habilidad.nombre}}
+                        </p>
+
+                    </div>
+
+                    <div *ngIf="isAdmin"
+                        class=" col-lg-6 col-md-6 col-12 text-center mb-1 d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button class="btn btn-outline-warning" routerLink="/editarHabilidad/{{habilidad.id}}">
+                            <i class="fa-solid fa-pen-to-square"></i>
+
+                        </button>
+
+                        <button class="btn btn btn-outline-danger" (click)="borrar(habilidad.id)">
+                            <i class="fa-solid fa-trash-can"></i>
+
+                        </button>
+
+                    </div>
+                </div> -->
+
+                <div class="progress border border-dark-subtle mb-3 " style="height: 20px;">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated text-black"
+                        style.width="{{habilidad.progreso}}%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        {{habilidad.progreso}}%</div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+<!-- FIN HABILIDADES -->

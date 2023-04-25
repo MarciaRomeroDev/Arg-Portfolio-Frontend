@@ -1,0 +1,45 @@
+<app-navbar></app-navbar>
+
+<div class="container mt-3" *ngIf="experiencia">
+  <div class="row">
+      <div class="mx-auto col-lg-6 col-md-6 col-12 ">
+           <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" >
+              <div class="mb-3 mt-3">
+                  <label for="titulo">Titulo:</label>
+                  <input type="text" class="form-control " id="titulo" placeholder="puesto/cargo " name="titulo" [(ngModel)]="experiencia.titulo" required>
+              </div>
+  
+              <div class="mb-3 mt-3">
+                  <label for="fecha">Fecha:</label>
+                  <input type="text" class="form-control " id="fecha" placeholder="Inicio-Fin " name="fecha" [(ngModel)]="experiencia.fecha" required>
+              </div>
+  
+              <div class="mb-3 mt-3">
+                  <label for="lugar">Lugar:</label>
+                  <input type="text" class="form-control " id="lugar" placeholder="Nombre de la empresa" name="lugar" [(ngModel)]="experiencia.lugar" required>
+              </div>
+
+              <div class="mb-3 mt-3">
+                  <label for="descripcion">Descripcion:</label>
+                  <input type="text" class="form-control " id="descripcion" placeholder="Breve descrcipcion de el cargo" name="descripcion" [(ngModel)]="experiencia.descripcion" required>
+              </div>
+              <div class= "d-grid gap-2 d-md-flex">
+                <button class="btn btn-outline-success" 
+                        [disabled]="!f.valid">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        Actualizar
+                </button>
+
+                <button class="btn btn-outline-primary" 
+                        routerLink= "/Experiencia"> 
+                        <i class="fa-solid fa-rotate-left"></i>
+                        Volver
+                </button>
+              </div>
+  
+            
+          
+          </form>
+      </div>
+  </div>
+</div>

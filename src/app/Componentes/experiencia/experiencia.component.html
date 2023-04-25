@@ -1,0 +1,64 @@
+<app-navbar></app-navbar>
+
+<div id="experiencia" class="offset mt-5 mb-3 container">
+  <!-- titulo -->
+  <div class="encabezado text-center">
+    <h3 class="display-4 fw-bold">Experiencia
+      <button *ngIf="isAdmin" 
+              class="btn btn-outline-success" 
+              routerLink="/nuevaExperiencia">
+              <i class="fa-solid fa-circle-plus"></i>
+             AGREGAR
+      </button>
+    </h3>
+    <hr class="w-50 mx-auto pb-5" />
+  </div>
+
+  <div class="container">
+    <div class="row  align-items-center">
+
+      <div class="col-lg-4 col-md-12 col-12">
+
+        <img class="col-md-10 img-fluid" 
+        src="./../../../assets/imagenes/experiencia.jpg" 
+        alt=" imagen-estudios">
+      </div>
+
+      <div   class="col-lg-8 col-md-12 col-12">
+
+        <div *ngFor="let experiencia of experiencias" class="card bg-transparent border-success mb-3 ">
+          <div  class="card-body">
+
+             <!-- botenes de edicion  -->
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+
+              <button *ngIf="isAdmin" 
+                      class="btn btn-outline-warning"
+                      routerLink="/editarExperiencia/{{experiencia.id}}">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                       EDITAR
+              </button>
+
+              <button *ngIf="isAdmin"  
+                       class="btn btn btn-outline-danger" 
+                      (click)="borrar(experiencia.id)">
+                      <i class="fa-solid fa-trash-can"></i>
+                      BORRAR
+              </button>
+
+            </div>
+
+            <h5 class="card-title">{{experiencia.titulo}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{experiencia.fecha}}</h6>
+            <p class="card-text">{{experiencia.lugar}}</p>
+            <p class="card-text">{{experiencia.descripcion}}</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>

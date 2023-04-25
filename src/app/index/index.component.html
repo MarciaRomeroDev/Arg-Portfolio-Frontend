@@ -1,0 +1,9 @@
+
+<app-navbar></app-navbar>
+
+<div class="container  ">
+    <div class="card rounded bg-success-subtle ">
+        <h1 *ngIf="!nombreUsuario" class="display-4 text-center">Hola, aun no estas Logeado </h1>
+        <h1 *ngIf="nombreUsuario" class="display-4  text-center ">Hola {{nombreUsuario}}</h1>
+      </div>
+</div>

@@ -1,0 +1,45 @@
+<app-navbar></app-navbar>
+
+<div class="container mt-3" *ngIf="estudios">
+  <div class="row">
+      <div class="mx-auto col-lg-6 col-md-6 col-12 ">
+           <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" >
+              <div class="mb-3 mt-3">
+                  <label for="titulo">Titulo:</label>
+                  <input type="text" class="form-control " id="titulo" placeholder="Título " name="titulo" [(ngModel)]="estudios.titulo" required>
+              </div>
+  
+              <div class="mb-3 mt-3">
+                  <label for="fecha">Fecha:</label>
+                  <input type="text" class="form-control " id="fecha" placeholder="Inicio-Fin " name="fecha" [(ngModel)]="estudios.fecha" required>
+              </div>
+  
+              <div class="mb-3 mt-3">
+                  <label for="lugar">Institución:</label>
+                  <input type="text" class="form-control " id="lugar" placeholder="Nombre de la institución" name="lugar" [(ngModel)]="estudios.lugar" required>
+              </div>
+
+              <div class="mb-3 mt-3">
+                  <label for="descripcion">Descripción:</label>
+                  <input type="text" class="form-control " id="descripcion" placeholder="Breve descrcipción del estudio" name="descripcion" [(ngModel)]="estudios.descripcion" required>
+              </div>
+              <div class= "d-grid gap-2 d-md-flex">
+                <button class="btn btn-outline-success" 
+                        [disabled]="!f.valid">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        Actualizar
+                </button>
+
+                <button class="btn btn-outline-primary" 
+                        routerLink= "/Estudios"> 
+                        <i class="fa-solid fa-rotate-left"></i>
+                        Volver
+                </button>
+              </div>
+  
+            
+          
+          </form>
+      </div>
+  </div>
+</div>
