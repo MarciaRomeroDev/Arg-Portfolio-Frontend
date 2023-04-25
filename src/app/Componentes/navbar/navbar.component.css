@@ -57,6 +57,11 @@
     outline-color: #F4D03F;
 }
 
+.icon--linkedin:hover {
+    background-color: #0007b5;
+    outline-color: #0077b5;
+}
+
 
 .btn{
    

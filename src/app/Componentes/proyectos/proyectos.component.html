@@ -22,13 +22,13 @@
                 <img [src]="proyecto.url_imagen"   class="card-img-top" alt={{proyecto.titulo}}>
                 <div class="card-body">
 
-                    <h5 class="card-title">{{proyecto.titulo}}</h5>
-                    <p class="card-text">{{proyecto.descripcion}}</p>
+                    <h3 class="card-title">{{proyecto.titulo}}</h3>
+                    <h6 class="card-text">{{proyecto.descripcion}}</h6>
                     <!-- botenes de edicion  -->
                     <div class="d-flex justify-content-between">
 
                         <div class="align-self-start">
-                            <a href={{proyecto.url_repositorio}}  class="btn ">Repositorio</a>
+                            <a href={{proyecto.url_repositorio}} target="_blank" class="btn ">Repositorio</a>
                         </div>
                         
                         <div class="d-grid gap-2 d-flex align-self-end">
