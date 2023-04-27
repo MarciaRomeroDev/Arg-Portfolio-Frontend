@@ -16,3 +16,7 @@ permite crear un usuario nuevo
 ## Bievenida
 una vez logeado se muestra un mesnaje de bienvenida con el nombre del usuario, ademas en el navbar se muestran las redes socilaes y los componentes de la pagina. el boton cambia a "Cerrar session"
 ![](https://github.com/webmarcia/Arg-Portfolio-Frontend/blob/main/bienvenida.png)
+
+## Pagina
+En el navbar, cada vez que pones el mause en el nombre del componente, éste se ressalta de otro color. Si el usuario tiene rol de admin permite ver botones de edicion 
+![](https://github.com/webmarcia/Arg-Portfolio-Frontend/blob/main/sobre-mi.png)
