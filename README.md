@@ -22,3 +22,7 @@ En el navbar, cada vez que pones el mause en el nombre del componente, éste se 
 ![](https://github.com/webmarcia/Arg-Portfolio-Frontend/blob/main/sobre-mi.png)
 
 ![](https://github.com/webmarcia/Arg-Portfolio-Frontend/blob/main/estudio.png)
+
+## Agregar
+Cada componente permite agregar nueva informacion, en el caso de habilidades te da una prevsualizacion del icono que deseae agregar.
+![](https://github.com/webmarcia/Arg-Portfolio-Frontend/blob/main/crear.png)
