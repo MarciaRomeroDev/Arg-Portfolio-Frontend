@@ -6,8 +6,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-##Inicio de Sesion
-![]https://github.com/webmarcia/Arg-Portfolio-Frontend/blob/main/incio%20sesion.png
+## Inicio de Sesion
+![](https://github.com/webmarcia/Arg-Portfolio-Frontend/blob/main/incio%20sesion.png)
 
 ## Regsitro 
 
