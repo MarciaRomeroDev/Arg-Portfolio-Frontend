@@ -20,3 +20,5 @@ una vez logeado se muestra un mesnaje de bienvenida con el nombre del usuario, a
 ## Pagina
 En el navbar, cada vez que pones el mause en el nombre del componente, éste se ressalta de otro color. Si el usuario tiene rol de admin permite ver botones de edicion 
 ![](https://github.com/webmarcia/Arg-Portfolio-Frontend/blob/main/sobre-mi.png)
+
+![](https://github.com/webmarcia/Arg-Portfolio-Frontend/blob/main/estudio.png)
