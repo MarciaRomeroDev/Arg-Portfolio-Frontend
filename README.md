@@ -13,6 +13,12 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 permite crear un usuario nuevo 
 ![](https://github.com/webmarcia/Arg-Portfolio-Frontend/blob/main/registro.png)
 
+## Inicio 
+
+la pagina de inicio te muestra el nombre. Los iconos de las redes cambian cada vez que se les pasa el mause y si haces click te abren una ventana a la red soci|al 
+
+![](https://github.com/webmarcia/Arg-Portfolio-Frontend/blob/main/incicio.png)
+
 ## Bievenida
 una vez logeado se muestra un mesnaje de bienvenida con el nombre del usuario, ademas en el navbar se muestran las redes socilaes y los componentes de la pagina. el boton cambia a "Cerrar session"
 ![](https://github.com/webmarcia/Arg-Portfolio-Frontend/blob/main/bienvenida.png)
