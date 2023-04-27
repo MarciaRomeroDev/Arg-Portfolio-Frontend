@@ -26,3 +26,8 @@ En el navbar, cada vez que pones el mause en el nombre del componente, éste se 
 ## Agregar
 Cada componente permite agregar nueva informacion, en el caso de habilidades te da una prevsualizacion del icono que deseae agregar.
 ![](https://github.com/webmarcia/Arg-Portfolio-Frontend/blob/main/crear.png)
+
+## Fotos
+Te perimite agregar fotos y ademas en el formulario te da una previsualizacion de la imagen que vas a subir a la aplicacion, tambien te muestra el boton de "Volver" en caso tal de que desees cancelar la operacion.
+
+![](https://github.com/webmarcia/Arg-Portfolio-Frontend/blob/main/previsualizacion.png)
