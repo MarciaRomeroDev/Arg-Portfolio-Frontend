@@ -10,7 +10,7 @@ import { Proyectos } from '../Model/proyectos';
 })
 export class ProyectosService {
 
-  URL = environment.URL + 'proyectos/';
+  URL = 'https://portfolio-api-o4b0.onrender.com/proyectos/';
 
   constructor(private httpClient : HttpClient) { }
 
