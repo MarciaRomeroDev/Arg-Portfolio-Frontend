@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class HabilidadesService {
 
-  URL =  'https://portfolio-api-o4b0.onrender.com/habilidades/';
+  URL =  'https://arg-portfolio.onrender.com/habilidades/';
 
   constructor(private httpClient : HttpClient) { }
 

@@ -8,7 +8,7 @@ import { Experiencia } from '../Model/experiencia';
   providedIn: 'root'
 })
 export class ExperienciaService {
-  expURL = 'https://portfolio-api-o4b0.onrender.com/experiencia/';
+  expURL = 'https://arg-portfolio.onrender.comexperiencia/';
   
   constructor(private httpClient: HttpClient) { }
 

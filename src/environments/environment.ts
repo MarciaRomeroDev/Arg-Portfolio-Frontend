@@ -14,8 +14,8 @@ export const environment = {
   },
   production: false,
   
-  URL : 'https://portfolio-api-o4b0.onrender.com/',
-  authURL : 'https://portfolio-api-o4b0.onrender.com/auth/'
+  URL : 'https://arg-portfolio.onrender.com/',
+  authURL : 'https://arg-portfolio.onrender.com/auth/'
 };
 
 /*

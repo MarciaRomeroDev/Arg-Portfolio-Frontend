@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class EstudiosService {
-  estURL = 'https://portfolio-api-o4b0.onrender.com/estudios/';
+  estURL = 'https://arg-portfolio.onrender.com/estudios/';
 
   constructor( private httpClient: HttpClient) { }
 

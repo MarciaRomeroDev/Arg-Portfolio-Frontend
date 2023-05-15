@@ -13,7 +13,7 @@ import { NuevoUsuario } from '../Model/nuevo-usuario';
 })
 export class AuthService {
   
-  authURL = 'https://portfolio-api-o4b0.onrender.com/auth';
+  authURL = 'https://arg-portfolio.onrender.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

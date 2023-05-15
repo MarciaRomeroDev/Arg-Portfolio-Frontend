@@ -10,7 +10,7 @@ import { Persona } from '../Model/persona';
   providedIn: 'root'
 })
 export class PersonaService {
-perURL = 'https://portfolio-api-o4b0.onrender.com/persona/';
+perURL = 'https://arg-portfolio.onrender.com/persona/';
 
   constructor(private httpClient: HttpClient) { }
    //ponemos los metodos del backend controller
