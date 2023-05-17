@@ -35,7 +35,7 @@ export class RegistroComponent implements OnInit {
     this.authService.nuevo(this.nuevoUsuario).subscribe(
       data => {
         this.toastr.success( data.mensaje, 'OK', {
-          timeOut: 3000, positionClass:'toast-top-center'
+          timeOut: 3000, positionClass: 'toast-top-center'
         });
         this.router.navigate(['/login']);
       },
